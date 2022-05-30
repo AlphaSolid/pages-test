@@ -1,0 +1,26 @@
+:root {
+    --blurple: #7289da;
+    --dark: #2c2f33;
+}
+
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    background-color: #99aab5;
+    color: var(--dark);
+}
+
+.border {
+    border: 1px solid var(--blurple);
+    padding: 5px;
+}
+
+.border2 {
+    border: 1px solid var(--dark);
+    padding: 5px;
+}
+
+table {width:100%;}
+
+th, td {padding: 8px;}
+
+tr:nth-child(even) {background-color: var(--blurple);}

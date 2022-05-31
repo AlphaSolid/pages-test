@@ -1,26 +1,50 @@
 :root {
     --blurple: #7289da;
     --dark: #2c2f33;
+    --grey: #99aab5;
 }
 
 body {
     font-family: "Source Sans Pro", sans-serif;
-    background-color: #99aab5;
+    background-color: var(--grey);
     color: var(--dark);
 }
 
-.border {
+.border-b {
     border: 1px solid var(--blurple);
     padding: 5px;
 }
 
-.border2 {
+.border-d {
     border: 1px solid var(--dark);
     padding: 5px;
 }
 
-table {width:100%;}
+table {
+    width: 100%;
+}
 
-th, td {padding: 8px;}
+th, td {
+    padding: 8px;
+}
 
-tr:nth-child(even) {background-color: var(--blurple);}
+tr:nth-child(even) {
+    background-color: var(--blurple);
+}
+
+.myButton {
+    border-radius: 10px;
+    padding: 16px 32px;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    background-color: rgba(114, 137, 218, 0.0);
+    border: 2px solid var(--blurple);
+    color: #fff;
+}
+
+.myButton:hover {
+    background-color: rgba(114, 137, 218, 1.0);
+}
